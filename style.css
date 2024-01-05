@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 700px;
+    overflow-x: scroll;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th:not(body > main > table > thead > tr > th:nth-child(1)), body > main > table > tbody:nth-child(4) > tr{
+    background-color: #00B0F0;
+}
+
+body > main > table > tbody > tr:nth-child(2n), {
+    background-color: rgb(214, 220, 228);
+}
+
+body > main > table > tbody:nth-child(3) > tr:nth-child(1) > th > h6{
+    transform: rotate(-90deg);
+    /* background-color: aqua; */
+    font-size: 20px;
+}
+
